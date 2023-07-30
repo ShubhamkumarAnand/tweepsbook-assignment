@@ -49,7 +49,11 @@ const Home = () => {
       ),
   });
 
-  if (isLoading || !data) {
+  if (isLoading) {
+    return "Loading";
+  }
+
+  if (!data) {
     return "Something Went Wrong!";
   }
 
