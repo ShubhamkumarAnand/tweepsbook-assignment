@@ -26,7 +26,7 @@ export default function Login() {
     const res = await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-        redirectTo: `${location.origin}/movies`
+        redirectTo: `${location.origin}/movies`,
       }
     })
   }
@@ -44,7 +44,7 @@ export default function Login() {
   return (
     <div className="flex flex-col justify-center items-center h-screen">
       <div className='relative mb-10 flex justify-center'>
-        <button onClick={() => handleLogin()} className='flex items-center gap-2 px-4 py-2 text-sm font-semibold text-gray-700 bg-white border rounded-lg'>
+        <button onClick={() => handleLogin()} className='flex items-center gap-2 px-4 py-2 text-lg font-semibold text-gray-700 bg-white border rounded-lg'>
           <Image src="/img/brand/Google.svg" alt='Login with google' className='w-6' width={24} height={24} />
           Login with Google
         </button>

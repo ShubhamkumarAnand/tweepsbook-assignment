@@ -76,7 +76,7 @@ const Home = () => {
     <>
       <div className="flex justify-between mt-10 mx-20 items-center">
         <p className="flex justify-center items-center text-3xl font-bold mt-10">Movies</p>
-        <button className="rounded-xl py-2 px-6 bg-blue-500 font-semibold" onClick={handleSignOut}>Sign out</button>
+        <button className="rounded-xl py-2 px-6 bg-blue-500 font-semibold" onClick={() => router.push(`${location.origin}`)}>Home Page</button>
       </div>
       <div className="grid grid-cols-4 mt-10 gap-10 mx-20">
         {results.map((result) => (
