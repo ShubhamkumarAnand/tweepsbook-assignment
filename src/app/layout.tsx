@@ -6,8 +6,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "supabase movie application",
-  description: "Tweepsbook assignment",
+  title: "jet protocol", description: "Jet Protocol : The next generation of defi governance experience open source, transparent and efficient borrowing and lending on solana.",
 };
 
 export default function RootLayout({
