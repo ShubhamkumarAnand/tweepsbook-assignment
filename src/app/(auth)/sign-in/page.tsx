@@ -34,28 +34,33 @@ export default function Login() {
     router.refresh();
   };
 
+  function togglePassword() {
+    console.log("Hello");
+  }
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="flex flex-col p-6 rounded-xl bg-gray-700 gap-5 text-black">
+      <div className="flex flex-col py-6 px-10 rounded-xl bg-gray-700 gap-5 text-black">
+        <label className="text-sm">Email</label>
         <input
           name="email"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
           placeholder="Email"
-          className="p-3 rounded-xl"
+          className="py-3 px-6 mt-0 rounded outline-none text-lg"
         />
+        <label className="text-sm">Password</label>
         <input
           type="password"
           name="password"
           onChange={(e) => setPassword(e.target.value)}
           value={password}
           placeholder="Password"
-          className="p-3 rounded-xl"
+          className="py-3 px-6 rounded outline-none"
         />
-        <button className="rounded p-2 bg-slate-600" onClick={handleSignUp}>
+        <button className="rounded p-2 bg-blue-600" onClick={handleSignUp}>
           Sign up
         </button>
-        <button className="rounded p-2 bg-gray-500 " onClick={handleSignIn}>
+        <button className="rounded p-2 bg-blue-500 " onClick={handleSignIn}>
           Sign in
         </button>
         <button onClick={handleSignOut}>Sign out</button>
