@@ -34,9 +34,6 @@ export default function Login() {
     router.refresh();
   };
 
-  function togglePassword() {
-    console.log("Hello");
-  }
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="flex flex-col py-6 px-10 rounded-xl bg-gray-700 gap-5 text-black">
@@ -63,7 +60,7 @@ export default function Login() {
         <button className="rounded p-2 bg-blue-500 " onClick={handleSignIn}>
           Sign in
         </button>
-        <button onClick={handleSignOut}>Sign out</button>
+        <button className="bg-blue-300 px-6 py-2" onClick={handleSignOut}>Sign out</button>
       </div>
     </div>
   );
