@@ -6,7 +6,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "sign-in page",
   description: "This is sign-in page of the application"
 }
