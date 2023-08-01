@@ -4,6 +4,12 @@ import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "sign-in page",
+  description: "This is sign-in page of the application"
+}
 
 export default function Login() {
   const [email, setEmail] = useState("");

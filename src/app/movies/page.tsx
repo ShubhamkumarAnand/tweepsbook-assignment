@@ -4,6 +4,7 @@ import { useQuery } from "react-query";
 import Image from "next/image";
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import { useRouter } from "next/navigation";
+import { Metadata } from "next";
 
 const options = {
   method: "GET",
@@ -44,6 +45,11 @@ interface Result {
 }
 
 const template: string = "https://image.tmdb.org/t/p/w500";
+
+export const metadata: Metadata = {
+  title: 'Movies Page',
+  description: "List of all the Upcoming movies in USA "
+}
 
 const Home = () => {
   const router = useRouter();
