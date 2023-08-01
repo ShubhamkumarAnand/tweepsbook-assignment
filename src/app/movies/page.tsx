@@ -67,6 +67,9 @@ const Home = () => {
   const handleSignOut = async () => {
     await supabase.auth.signOut();
     router.refresh();
+    options: {
+      redirect: `${location.origin}`
+    }
   };
   const results: Result[] = data.results;
   return (
